@@ -76,6 +76,21 @@ img {
 	margin-top: 20px;
 }
 
+footer {
+	text-align: center;
+	margin: 0 auto;
+}
+
+footer p {font-size: 13px;}
+
+footer a:hover { color: #EA5454;}
+footer a {
+	text-decoration: none;
+	color: #549EF2;
+	font-weight: 500;
+}
+footer a:active {color: #44D3D2;}
+
 @media (min-width: 1110px) {
 	
 	body {
