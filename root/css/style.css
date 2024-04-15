@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	color: #4D4F62;
+}
+body {
+	background-color: #FAFAFA;
+}
+
+h1:first-of-type {
+	font-size: 24px;
+	font-weight: 200;
+}
+
+h1:last-of-type, h2 {
+	font-weight: 600;
+}
+
+h1:last-of-type {margin-bottom: 16px;}
+h1 {letter-spacing: 0.17px;}
+
+p {
+	font-weight: 200;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: 0.1px;
+}
+
+h2 {font-size: 20px;}
+
+main p {
+	font-size: 13px;
+	line-height: 23px;
+	letter-spacing: 0.09px;
+}
+
+article {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 311px;
+	padding-top: 70px;
+}
+
+.cardSection {
+ display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+/*	border-top: */
+	margin-bottom: 70px;
+}
+
+section {
+	padding: 1.5em 1.8em;
+	border-top: solid 3.5px;
+	margin: 2em 0;
+	background-color: #fff;
+	border-radius: 8px;
+	
+	box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 50%);
+	max-height: 222px;
+	max-width: 311px;
+}
+
+.card1 {color: #44D3D2;}
+.card2 {color: #EA5454;}
+.card3 {color: #FCAE4A;}
+.card4 {color: #549EF2;}
+
+img {
+	position: relative;
+	left: 190px;
+	max-height: 57px;
+	margin-top: 20px;
+}
+
+@media (min-width: 1110px) {
+	
+	body {
+/*
+		min-height: 100vh;
+		overflow: hidden;
+*/
+	}
+	article {
+		max-width: 540px;
+		padding-top: 65px;
+		padding-bottom: 65px;
+	}
+	
+	h1:last-of-type {margin-bottom: 0px;}
+	h1, h1:first-of-type {
+		font-size: 36px;
+		margin-bottom: -10px;
+	}
+
+	
+	.cardSection {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		margin-bottom: 0;
+		
+		place-items: center;
+		max-width: 1110px;
+		margin: 0 auto;
+		padding-bottom: 65px;
+	}
+	
+	.card1 {
+		grid-row: 2/4;
+		grid-column: 1/3;
+		margin-right: 15px;
+	}
+	
+	.card2 {
+		grid-row: 1/3;
+		grid-column: 3/5;
+		margin-bottom: 20px;
+	}
+	
+	.card3 {
+		grid-row: 3/5;
+		grid-column: 3/5;
+	}
+	
+	.card4 {
+		grid-row: 2/4;
+		grid-column: 5/7;
+		margin-left: 15px;
+	}
+	
+	section {
+		padding: 1.8em 2em;
+		max-height: 250px;
+		max-width: 350px;
+		margin: 0;
+		
+	}
+	
+	img {
+		left: 223px;
+		top: 10px;
+		max-height: 64px;
+		margin-top: 15px;
+	}
+	
+	h2 {
+		padding-bottom: 5px;
+	}
+	
+	main p {
+	line-height: 25px;
+	}
+}
